@@ -41,22 +41,7 @@ Sample Output
 Rosalind_0808
 60.919540
 '''
-'''import math
-from Bio import SeqIO
-def parser(name, sequence):
-    count = 0
-    for i in sequence:
-        if i == 'G':
-            count += 1
-        elif i == 'C':
-            count += 1
-        else:
-            count += 0
-    print(name)
-    print(sequence)
-    percentage = float(count/len(sequence))
-    print(percentage)
-'''
+
 
 def read_fasta(fp):
     name, seq = None, []
