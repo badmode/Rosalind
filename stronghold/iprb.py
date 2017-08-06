@@ -13,3 +13,18 @@ Sample Output
 
 0.78333
 '''
+def mendel(k,m,n):
+	pop = k + m + n
+	pop += 0.0
+
+	DD0 = (k/pop)
+
+	Dr0 = (m/pop)*(k/(pop-1))
+	Dr1 = (m/pop)*((m-1)/(pop-1))*(0.75)
+	Dr2 = (m/pop)*(n/(pop-1))*(0.5)
+	het0 = Dr0 + Dr1 + Dr2
+	rr0 = (n/pop)*(k/(pop-1))
+	rr1 = (n/pop)*(m/(pop-1))*(0.5)
+	rec0 = rr0 + rr1
+	return DD0 + het0 + rec0
+print mendel(27, 29, 27)
